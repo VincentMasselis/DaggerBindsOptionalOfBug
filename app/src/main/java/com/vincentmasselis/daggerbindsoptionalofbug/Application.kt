@@ -12,8 +12,5 @@ class Application : Application() {
     override fun onCreate() {
         super.onCreate()
         DaggerRootComponent.factory().build().also { it.inject(this) }
-        //val subComponent = rootComponent.subComponent.build()
-
-
     }
 }
